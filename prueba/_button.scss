@@ -1,0 +1,130 @@
+/* From uiverse.io */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    
+   }
+   
+   button.learn-more {
+    width: 25em;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3em;
+    height: 3em;
+    background: $fondo;
+    border-radius: 1.625em;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625em;
+    width: 1.125em;
+    height: 0.125em;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29em;
+    right: 0.0625em;
+    width: 0.625em;
+    height: 0.625em;
+    border-top: 0.125em solid #fff;
+    border-right: 0.125em solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75em 0;
+    margin: 0 0 0 1.85em;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1em, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+     /* From uiverse.io by @Custyyyy */
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: #c02942;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: $text-base;
+    box-shadow: 0px 14px 30px -11px rgb(107, 106, 106);
+    width: 30em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+   }
+   
+   .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+   }
+   
+   .button span:after {
+    content: 'de actividades';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -60px;
+    transition: 0.7s;
+   }
+   
+   .button:hover span {
+    padding-right: 7.7em;
+   }
+   
+   .button:hover span:after {
+    opacity: 4;
+    right: 0;
+   }
